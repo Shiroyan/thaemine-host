@@ -53,14 +53,14 @@
     "disableNodePolyfill": true,
     "enableInlineRouteManifests": true,
     "disableInlineRouteManifests": false,
-    "assetPrefix": "thaemine-host"
+    "assetPrefix": "/thaemine-host"
   },
   "server": {
     "baseUrl": "/",
     "port": 8080
   },
   "dev": {
-    "assetPrefix": "thaemine-host"
+    "assetPrefix": "/thaemine-host"
   },
   "html": {
     "title": "",
@@ -154,10 +154,10 @@
       "[Circular 0]"
     ],
     "dev": {
-      "assetPrefix": "thaemine-host"
+      "assetPrefix": "/thaemine-host"
     },
     "output": {
-      "assetPrefix": "thaemine-host"
+      "assetPrefix": "/thaemine-host"
     }
   },
   "bff": {},
