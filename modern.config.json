@@ -59,7 +59,9 @@
     "baseUrl": "/",
     "port": 8080
   },
-  "dev": {},
+  "dev": {
+    "assetPrefix": "thaemine-host"
+  },
   "html": {
     "title": "",
     "mountId": "root",
@@ -151,6 +153,9 @@
     "plugins": [
       "[Circular 0]"
     ],
+    "dev": {
+      "assetPrefix": "thaemine-host"
+    },
     "output": {
       "assetPrefix": "thaemine-host"
     }
