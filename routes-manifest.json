@@ -1,0 +1,35 @@
+{
+  "routeAssets": {
+    "main": {
+      "chunkIds": [
+        "builder-runtime",
+        "lib-polyfill",
+        "lib-react",
+        "lib-router",
+        "vendors-node_modules_pnpm_pmmmwh_react-refresh-webpack-plugin_0_5_10_izee6ngzr2htzrmfms2vtsss-fa5642",
+        "main"
+      ],
+      "assets": [
+        "/static/js/builder-runtime.js",
+        "/static/js/lib-polyfill.js",
+        "/static/js/lib-react.js",
+        "/static/js/lib-router.js",
+        "/static/js/vendors-node_modules_pnpm_pmmmwh_react-refresh-webpack-plugin_0_5_10_izee6ngzr2htzrmfms2vtsss-fa5642.js",
+        "/static/js/main.js"
+      ],
+      "referenceCssAssets": []
+    },
+    "page": {
+      "chunkIds": [
+        "page"
+      ],
+      "assets": [
+        "/static/css/async/page.css",
+        "/static/js/async/page.js"
+      ],
+      "referenceCssAssets": [
+        "/static/css/async/page.css"
+      ]
+    }
+  }
+}

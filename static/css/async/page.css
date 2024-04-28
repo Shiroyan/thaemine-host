@@ -1,0 +1,267 @@
+.l2f-circle {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.l2f-circle .stripe {
+  position: absolute;
+  /* 使用绝对定位 */
+  height: 100%;
+  /* 条纹的高度 */
+  background: rgba(255, 0, 0, 0.6);
+  /* 条纹的颜色 */
+  opacity: 0;
+  /* 开始时不可见 */
+  border-right: 1px solid red;
+  animation: wave 0.8s linear;
+  /* 设置动画属性 */
+}
+.l2f-circle .stripe:nth-child(1) {
+  animation-delay: 0s;
+}
+.l2f-circle .stripe:nth-child(2) {
+  animation-delay: 0.05s;
+}
+.l2f-circle .stripe:nth-child(3) {
+  animation-delay: 0.1s;
+}
+.l2f-circle .stripe:nth-child(4) {
+  animation-delay: 0.15s;
+}
+.l2f-circle .stripe:nth-child(5) {
+  animation-delay: 0.2s;
+}
+.l2f-circle .stripe:nth-child(6) {
+  animation-delay: 0.2s;
+}
+.l2f-circle .stripe:nth-child(7) {
+  animation-delay: 0.2s;
+}
+.l2f-circle .stripe:nth-child(8) {
+  animation-delay: 0.25s;
+}
+.l2f-circle .stripe:nth-child(9) {
+  animation-delay: 0.4s;
+}
+.l2f-circle .stripe:nth-child(10) {
+  animation-delay: 0.45s;
+}
+.l2f-circle .stripe:nth-child(11) {
+  animation-delay: 0.5s;
+}
+.l2f-circle .stripe:nth-child(12) {
+  animation-delay: 0.55s;
+}
+@keyframes wave {
+  0% {
+    opacity: 0;
+    /* 动画开始时不可见 */
+  }
+  50% {
+    opacity: 1;
+    /* 动画中间时可见 */
+  }
+  100% {
+    opacity: 0;
+    /* 动画结束时不可见 */
+  }
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+  background: linear-gradient(to bottom, transparent, #fff) #eceeef;
+}
+p {
+  margin: 0;
+}
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+}
+html,
+body,
+#root,
+.camera,
+.main {
+  width: 100%;
+  height: 100%;
+}
+.camera {
+  perspective-origin: center center;
+  perspective: 500px;
+}
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.battle-field {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 50px;
+  width: 600px;
+  height: 600px;
+  border: 1px solid #eee;
+  background-color: #333;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.pattern {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.pattern-btn {
+  width: 100px;
+  height: 36px;
+  outline: none;
+  margin-right: 20px;
+}
+
+.three-quarters-circle {
+  width: 100%;
+  /* 圆的直径 */
+  height: 100%;
+  /* 圆的直径 */
+  background: rgba(255, 0, 0, 0.6);
+  /* 圆的颜色 */
+  border-radius: 50%;
+  /* 确保它是一个完整的圆 */
+  -webkit-clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%);
+          clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%);
+  animation: fadeIn 0.3s ease-in-out;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes wave {
+  0% {
+    opacity: 0;
+    /* 动画开始时不可见 */
+  }
+  50% {
+    opacity: 1;
+    /* 动画中间时可见 */
+  }
+  100% {
+    opacity: 0;
+    /* 动画结束时不可见 */
+  }
+}
+.ripple-circle {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.ripple-circle .stripe {
+  position: absolute;
+  /* 使用绝对定位 */
+  height: 100%;
+  /* 条纹的高度 */
+  width: calc(100% / 12);
+  /* 条纹的宽度 */
+  background: rgba(255, 0, 0, 0.6);
+  /* 条纹的颜色 */
+  border-right: 1px solid red;
+  opacity: 0;
+  /* 动画开始时透明 */
+  animation: wave 0.5s linear;
+  /* 设置动画 */
+}
+.ripple-circle .stripe:nth-child(1) {
+  left: 0%;
+  animation-delay: 0.5s;
+}
+.ripple-circle .stripe:nth-child(2) {
+  left: calc(100% / 12);
+  animation-delay: 0.4s;
+}
+.ripple-circle .stripe:nth-child(3) {
+  left: calc(100% / 12 * 2);
+  animation-delay: 0.3s;
+}
+.ripple-circle .stripe:nth-child(4) {
+  left: calc(100% / 12 * 3);
+  animation-delay: 0.1s;
+}
+.ripple-circle .stripe:nth-child(5) {
+  left: calc(100% / 12 * 4);
+  animation-delay: 0.05s;
+}
+.ripple-circle .stripe:nth-child(6) {
+  left: calc(100% / 12 * 5);
+  animation-delay: 0s;
+}
+.ripple-circle .stripe:nth-child(7) {
+  right: calc(100% / 12 * 5);
+  animation-delay: 0s;
+}
+.ripple-circle .stripe:nth-child(8) {
+  right: calc(100% / 12 * 4);
+  animation-delay: 0.05s;
+}
+.ripple-circle .stripe:nth-child(9) {
+  right: calc(100% / 12 * 3);
+  animation-delay: 0.1s;
+}
+.ripple-circle .stripe:nth-child(10) {
+  right: calc(100% / 12 * 2);
+  animation-delay: 0.3s;
+}
+.ripple-circle .stripe:nth-child(11) {
+  right: calc(100% / 12);
+  animation-delay: 0.4s;
+}
+.ripple-circle .stripe:nth-child(12) {
+  right: 0;
+  animation-delay: 0.5s;
+}
+
+.dual-bar-circle {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: fadeIn 0.3s ease-in-out;
+}
+.dual-bar-circle .danger {
+  width: 100%;
+  height: 20%;
+  background: rgba(255, 0, 0, 0.6);
+  /* 圆的颜色 */
+}
+.dual-bar-circle .safe {
+  width: 100%;
+  height: 22.5%;
+  background-color: transparent;
+}
+.dual-bar-circle .mid-safe {
+  width: 100%;
+  height: 15%;
+  background-color: transparent;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+/*# sourceMappingURL=page.css.map*/
