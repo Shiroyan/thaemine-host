@@ -43,7 +43,7 @@
   "output": {
     "distPath": {
       "root": "dist",
-      "html": "html",
+      "html": "./",
       "js": "static/js",
       "css": "static/css",
       "server": "bundles",
@@ -79,7 +79,8 @@
       "imagemode": "force",
       "wap-font-scale": "no",
       "format-detection": "telephone=no"
-    }
+    },
+    "disableHtmlFolder": true
   },
   "plugins": [
     {
@@ -157,7 +158,13 @@
       "assetPrefix": "/thaemine-host"
     },
     "output": {
-      "assetPrefix": "/thaemine-host"
+      "assetPrefix": "/thaemine-host",
+      "distPath": {
+        "html": "./"
+      }
+    },
+    "html": {
+      "disableHtmlFolder": true
     }
   },
   "bff": {},
